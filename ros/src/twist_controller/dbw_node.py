@@ -81,7 +81,7 @@ class DBWNode(object):
             rate.sleep()
 
     def dbw_enabled_cb(self, msg):
-        self.dbw_enable = msg+1
+        self.dbw_enable = msg
         
     def twist_cb(self, msg):
         self.linear_vel = msg.twist.linear.x
